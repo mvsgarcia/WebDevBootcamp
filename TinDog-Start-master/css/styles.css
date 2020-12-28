@@ -88,7 +88,6 @@ p{
 #testimonials {
   background-color: #ef8172;
   color: #ffff;
-  padding: 7% 15%;
   text-align: center;
 }
 
@@ -96,6 +95,10 @@ p{
   background-color: #ef8172;
   text-align: center;
   padding-bottom: 3%;
+}
+
+.carousel-item {
+  padding: 7% 15%;
 }
 
 .press-logo {
