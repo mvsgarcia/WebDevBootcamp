@@ -31,7 +31,7 @@ p {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Download Buttons */
@@ -63,11 +63,17 @@ p {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* Features Section */
 #features {
+  background-color: #fff;
   padding: 7% 15%;
+  position: relative;
+  z-index: 1;
+  /* can be removed based on the z-index flowchart stacking order */
 }
 
 .feature-box {
