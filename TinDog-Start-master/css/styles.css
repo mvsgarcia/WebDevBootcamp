@@ -1,27 +1,9 @@
-#title {
-  background-color: #ff4c68;
-  color: #fff;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 3.4rem;
-  line-height: 1.5;
-}
-
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 2.9rem;
-  line-height: 1.5;
-}
-
-h3 {
+h2, h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -30,8 +12,17 @@ p {
   color: #8f8f8f;
 }
 
-.container-fluid {
-  padding: 3% 15% 7%;
+/* Container Section */
+.container-fluid{
+padding: 7% 15%;
+}
+
+/* Headings */
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3.4rem;
+  line-height: 1.5;
 }
 
 /* Download Buttons */
@@ -59,6 +50,17 @@ p {
   font-weight: 300;
 }
 
+/* Title Section */
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid{
+padding: 3% 15% 7%;
+}
+
 /* Title Image */
 .title-image {
   width: 60%;
@@ -70,15 +72,17 @@ p {
 /* Features Section */
 #features {
   background-color: #fff;
-  padding: 7% 15%;
   position: relative;
   z-index: 1;
   /* can be removed based on the z-index flowchart stacking order */
 }
 
 .feature-box {
-  text-align: center;
   padding: 5%;
+}
+
+.feature-title {
+  font-size: 1.4rem;
 }
 
 .icon {
@@ -94,22 +98,21 @@ p {
 #testimonials {
   background-color: #ef8172;
   color: #ffff;
-  text-align: center;
 }
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
-}
-
-.carousel-item {
-  padding: 7% 15%;
 }
 
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+.section-heading {
+  line-height: 1.5;
+  font-size: 2.9rem;
 }
 
 .testimonial-image {
@@ -118,16 +121,37 @@ p {
   margin: 20px;
 }
 
+.testimonial-text {
+  line-height: 1.5;
+  font-size: 2.9rem;
+}
+
 /* Pricing Section */
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+
+.price-text {
+  line-height: 1.5;
+  font-size: 2.9rem;
 }
 
 .pricing-col {
   padding: 3% 2%;
 }
 
+
+/* CTA section */
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+
+/* Footer Section */
+.social-icon {
+  margin: 20px 10px;
+}
 
 @media (max-width: 1028px) {
 
