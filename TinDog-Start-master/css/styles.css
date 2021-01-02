@@ -17,6 +17,17 @@ p {
 padding: 7% 15%;
 }
 
+/* Sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+
 /* Headings */
 .big-heading {
   font-family: 'Montserrat', sans-serif;
@@ -50,15 +61,9 @@ padding: 7% 15%;
   font-weight: 300;
 }
 
-/* Title Section */
-#title {
-  background-color: #ff4c68;
-  color: #fff;
+#title .container-fluid {
+  padding: 3% 15% 7%;
   text-align: left;
-}
-
-#title .container-fluid{
-padding: 3% 15% 7%;
 }
 
 /* Title Image */
@@ -71,7 +76,6 @@ padding: 3% 15% 7%;
 
 /* Features Section */
 #features {
-  background-color: #fff;
   position: relative;
   z-index: 1;
   /* can be removed based on the z-index flowchart stacking order */
@@ -97,7 +101,6 @@ padding: 3% 15% 7%;
 /* Testimonial Section */
 #testimonials {
   background-color: #ef8172;
-  color: #ffff;
 }
 
 #press {
@@ -139,14 +142,6 @@ padding: 3% 15% 7%;
 .pricing-col {
   padding: 3% 2%;
 }
-
-
-/* CTA section */
-#cta {
-  background-color: #ff4c68;
-  color: #fff;
-}
-
 
 /* Footer Section */
 .social-icon {
