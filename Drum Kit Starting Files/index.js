@@ -5,7 +5,16 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 
     var buttonInnerHTML = this.innerHTML;
 
-    switch (buttonInnerHTML) {
+    makeSound(buttonInnerHTML);
+
+  });
+
+  document.addEventListener("keydown", function(event) {
+      makeSound(event.key);
+  });
+
+  function makeSound(key) {
+    switch (key) {
 
       case "w":
         var crash = new Audio("sounds/crash.mp3");
@@ -46,6 +55,5 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
         console.log(buttonInnerHTML);
     }
 
-
-  });
+  }
 }
