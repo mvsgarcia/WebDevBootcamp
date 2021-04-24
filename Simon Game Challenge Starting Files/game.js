@@ -1,11 +1,9 @@
 var buttonColours = ["red", "blue", "green", "yellow"];
 
 var gamePattern = [];
-
 var userClickedPattern = [];
 
 var started = false;
-
 var level = 0;
 
 $(document).keydown( function() {
@@ -23,10 +21,19 @@ $(".btn").click(function() {
   userClickedPattern.push(userChosenColour);
 
   playSound(userChosenColour);
-
   animatePress(userChosenColour);
 
+  checkAnswer(userClickedPattern.length-1);
+
 });
+
+function checkAnswer(currentLevel) {
+  if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
+    console.log("success!");
+  } else {
+    console.log("wrong");
+  }
+}
 
 function nextSequence() {
 
