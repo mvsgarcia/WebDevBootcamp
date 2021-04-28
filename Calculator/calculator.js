@@ -2,9 +2,10 @@
 const express = require("express");
 const app = express();
 
-//Send the words Hello World from the root route as the response 
+
 app.get("/", function(req, res){
-    res.send("<h1>Hello World</h1>");
+  //res.send("<h1>Hello World</h1>"); //Send the words Hello World from the root route as the response
+  res.sendFile(__dirname + "/index.html");
 });
 
 //Spin up our server on port 3000 with app.listen
