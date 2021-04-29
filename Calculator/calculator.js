@@ -10,8 +10,8 @@ app.get("/", function(req, res){
 
 app.post("/bmicalculator", function (req, res) {
 
-  var w = Number(req.body.weight);
-  var h = Number(req.body.height);
+  var w = parseFloat(req.body.weight);
+  var h = parseFloat(req.body.height);
 
   var result = Math.floor(w / Math.pow(h, 2));
 
